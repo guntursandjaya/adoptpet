@@ -12,7 +12,7 @@ class TableAdopterSeeder extends Seeder
      */
     public function run()
     {
-        Adopter::create([
+        /*Adopter::create([
             'name' => 'bagus',
             'l_name' => 'manuaba',
             'email' => 'bagus@email.com',
@@ -20,5 +20,6 @@ class TableAdopterSeeder extends Seeder
             'password' => Hash::make('finalproject'), 
         ]);
         //
+        */
     }
 }

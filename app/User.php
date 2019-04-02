@@ -32,7 +32,7 @@ class User extends Authenticatable
 
 
 
-    Public Function pets(){
+    Public Function pet(){
         return $this->hasMany('App\Pet');
     }
 

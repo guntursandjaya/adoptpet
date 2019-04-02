@@ -31,6 +31,6 @@ class DashboardController extends Controller
         //$user = DB::select('select * from pets where shelter_id = shelter_id', ['shelter_id'=> auth()->user()->id]);
 
 
-       return view('dashboard')->with('pets',$user->pets);
+       return view('dashboard')->with('pets',$user->pet);
     }
  }

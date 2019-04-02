@@ -9,15 +9,13 @@ class Adopter extends Authenticatable
 {
     use Notifiable;
 
-    protected $guard = 'adopter';
-
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name','l_name','phone_number', 'email', 'password',
+        'name', 'email', 'password','Phone_number',
     ];
 
     /**
@@ -31,9 +29,5 @@ class Adopter extends Authenticatable
 
     //Primary Key
     public $primaryKey = 'id';
-
-
-
-
 
 }

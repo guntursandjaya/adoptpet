@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pet extends Model
 {
     // Table Name
-    protected $table = 'Pets';
+    protected $table = 'pets';
 
     //Primary Key
     public $primaryKey = 'id';
@@ -16,6 +16,6 @@ class Pet extends Model
     public $timestamps = true;
 
     public function User(){
-        return $this->belongsTo('App\Pet');
+        return $this->belongsTo('App\User');
     }
 }

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Pet Info</h1>
-    {!! Form::open(['action' => ['PostsController@update', $pet->id], 'method' => 'POST'])!!}
+    {!! Form::open(['action' => ['PostsController@update', $pet->id], 'method' => 'POST','enctype' => ' multipart/form-data'])!!}
         <div class="form-group">
             {{Form::label('name', 'Name')}}
             {{Form::text('name', $pet->name, ['class' => 'form-control', 'placeholder' => 'Name'])}}

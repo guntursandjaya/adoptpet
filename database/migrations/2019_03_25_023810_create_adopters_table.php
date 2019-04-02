@@ -13,9 +13,9 @@ class CreateAdoptersTable extends Migration
      */
     public function up()
     {
-        Schema::create('adopters', function (Blueprint $table) {
+       /* Schema::create('adopters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('f_name');
+            $table->string('name');
             $table->string('l_name');
             $table->string('Phone_number');
             $table->string('email')->unique();
@@ -23,6 +23,7 @@ class CreateAdoptersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        */
     }
 
     /**
