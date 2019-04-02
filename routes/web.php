@@ -13,8 +13,9 @@
 
 
 
-Route::get('/', 'PostsController@index');
-Route::get('/home', 'PostsController@index');
+Route::get('/', 'PagesController@index');
+Route::get('/home', 'PagesController@index');
+route::get('/list','PostsController@index');
 
 Route::get('/adopter/login', 'Auth\AdoptersLoginController@showLoginForm')->name('adopter.login');
 Route::post('/adopter/login', 'Auth\AdoptersLoginController@login')->name('adopter.login.submit');
