@@ -25,7 +25,7 @@ class AddPetImageToPets extends Migration
      */
     public function down()
     {
-        SSchema::table('pets', function($table){
+        Schema::table('pets', function($table){
             $table->dropColumn('cover_image');
         });
     }
